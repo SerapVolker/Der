@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Diamond from '../images/Youtube.svg'
+import Emerald from '../images/VK.svg'
+import Redstone from '../images/Insta.svg'
+import Coal from '../images/Tweet.svg'
+import Iron from '../images/Face.svg'
 const Container = styled.div`
   background-color:  #1D1A1A;
   height:315px;
-  width: 1440px;
+  width: 1423px;
 `
 const Wrapper = styled.div`
   justify-content: space-between;
@@ -24,7 +28,7 @@ const B2 = styled.div`
  font-size: 24px;
  font-family: "Roboto", sans-serif;
  padding-top: 60px;
- padding-left: 98px;
+ padding-left: 18px;
  padding-bottom: 36;
 `
 
@@ -34,12 +38,16 @@ const B3 = styled.div`
  font-size: 24px;
  font-family: "Roboto", sans-serif;
  padding-top: 60px;
- padding-left: 74px;
+ padding-left: 14px;
  padding-bottom: 36px;
 `
 const B4 = styled.div`
   flex:2;
-
+  padding-top: 75px;
+  padding-right: 892;
+  img{
+    margin-right: 50px;
+  }
 `
 const Podval = () => {
   return (
@@ -58,6 +66,13 @@ const Podval = () => {
     <p>Оплата</p>
     <p>Доставка</p>
   </B3>
+  <B4>
+  <img src={Redstone} />
+  <img src={Emerald} />
+  <img src={Coal} />
+  <img src={Iron} />
+  <img src={Diamond} />
+  </B4>
 </Wrapper>
 </Container>
   )
